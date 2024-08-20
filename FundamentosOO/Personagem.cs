@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FundamentosOO
 {
-    public abstract class Personagem
+    public class Personagem
     {
         public string Nome { get; set; }
         public string Categoria { get; set; }
@@ -15,5 +15,28 @@ namespace FundamentosOO
         public int Agilidade { get; set; }
         public int Inteligencia { get; set; }
         public int Vida { get; set; }
+
+        public virtual void apresentacao()
+        {
+
+        }
+        public virtual int atacar()
+        {
+
+        }
+        public virtual int defender()
+        {
+        }
+        public virtual void evolucao()
+        {
+
+        }
+        public virtual void batalha(Personagem pers)
+        {
+            Console.WriteLine(this.Nome + " Começa a batalha!");
+        }
+
     }
+
+
 }
