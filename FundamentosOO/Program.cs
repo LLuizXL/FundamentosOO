@@ -96,14 +96,14 @@ internal class Program
         Console.WriteLine("---------------------------------------");
         //-----------------------------------------------------------------------------
 
-        Funcionario funcionario1 = new Funcionario();
-        funcionario1.Nome = "Quandale Dingle";
-        funcionario1.Idade = 21;
-        funcionario1.Cargo = "Gamer";
-        funcionario1.Salario = 100;
+        Funcionario func1 = new Funcionario();
+        func1.Nome = "Luis Santos";
+        func1.Idade = 20;
+        func1.Cargo = "Aprendiz";
+        func1.Salario = 1400.00;
+        func1.ApresentarSe();
 
 
-        funcionario1.ApresentarSe();
 
         Console.WriteLine("---------------------------------------------------------");
 
