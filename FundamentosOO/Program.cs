@@ -131,15 +131,33 @@ internal class Program
         goofier.Inteligencia = 15;
         goofier.Forca = 5;
         goofier.Agilidade = 7;
+        goofier.Nivel = 1;
         goofier.Categoria = "Mago";
 
-        goofier.apresentacao();
+        Cavaleiro alec = new Cavaleiro();
+        alec.Nome = "Sir Alec";
+        alec.Vida = 150;
+        alec.Inteligencia = 8;
+        alec.Forca = 20;
+        alec.Agilidade = 20;
+        alec.Nivel = 1;
+
+
+
         Console.WriteLine("-------------------------------------------------------------");
+
+        goofier.apresentacao();
+
+
+        Console.WriteLine("-------------------------------------------------------------");
+
         goofier.atacar();
-        goofier.defender();
 
 
-        goofier.batalha();
+        Console.WriteLine("-------------------------------------------------------------");
+
+
+        goofier.Batalha(alec);
 
 
     }

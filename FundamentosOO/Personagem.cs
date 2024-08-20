@@ -20,20 +20,36 @@ namespace FundamentosOO
         {
 
         }
-        public virtual int atacar()
+        public virtual void atacar()
         {
 
         }
-        public virtual int defender()
+        public virtual void defender()
         {
+
         }
         public virtual void evolucao()
         {
 
         }
-        public virtual void batalha(Personagem pers)
+        public virtual void Batalha(Personagem pers)
         {
-            Console.WriteLine(this.Nome + " Começa a batalha!");
+            int dano1 = this.Forca + this.Inteligencia / 2;
+            int defesa1 = (this.Vida + this.Inteligencia) / 3;
+
+            int dano2 = this.Forca + this.Inteligencia / 2;
+            int defesa2 = (this.Vida + this.Inteligencia) / 3;
+
+
+            Console.WriteLine("--------" + this.Nome + " Começa a batalha!" + "---------");
+            this.atacar();
+
+
+            Console.WriteLine("Vida restante do Oponente: ");
+
+            Console.WriteLine(pers.Vida - dano);
+
+
         }
 
     }

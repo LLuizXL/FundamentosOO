@@ -20,17 +20,16 @@ namespace FundamentosOO
 
         public override void atacar()
         {
-            int dano = this.Forca + this.Inteligencia / 2;
 
 
-            Console.WriteLine("Elara conjura uma esfera de chamas que explode ao atingir o alvo, causando dano massivo de fogo e queimaduras contínuas.    Dano: ");
-            Console.WriteLine(dano);
+
+            Console.WriteLine("Goofier conjura uma esfera de chamas que explode ao atingir o alvo, causando dano massivo de fogo e queimaduras contínuas.");
 
         }
         public override void defender()
         {
-            Console.WriteLine("Elara ergue uma barreira arcana que absorve parte dos danos recebidos, refletindo um pouco de energia mágica de volta aos atacantes." +
-                "Pontos de Defesa: " + (this.Agilidade + this.Inteligencia) / 3);
+            Console.WriteLine("Goofier ergue uma barreira arcana que absorve parte dos danos recebidos, refletindo um pouco de energia mágica de volta aos atacantes." +
+                "Pontos de Defesa: " + );
         }
 
         public override void evolucao()
